@@ -1,0 +1,29 @@
+/* Modifications pour agrandir les plats phares */
+
+.plats-phares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .plat-phare {
+    margin: 10px;
+    width: 400px; /* Augmentez la largeur ici */
+    height: 400px; /* Augmentez la hauteur ici */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+  }
+  
+  .plat-phare img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .plats-phares {
+      flex-direction: column;
+    }
+  }
+  
